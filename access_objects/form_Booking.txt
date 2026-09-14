@@ -1,0 +1,532 @@
+Version =19
+VersionRequired =19
+Checksum =58816626
+Begin Form
+    AutoCenter = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =7143
+    DatasheetFontHeight =10
+    ItemSuffix =17
+    Left =3720
+    Top =285
+    Right =11145
+    Bottom =4410
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xec76bcfc7466e240
+    End
+    GUID = Begin
+        0xd1f6cddf8d4dd711803d0050da3ef294
+    End
+    NameMap = Begin
+        0x0acc0e5500000000b1f6cddf8d4dd711803d0050da3ef29400000000bb9ac6f2 ,
+        0x7466e240000000000000000042006f006f006b0069006e006700000000000000 ,
+        0xbef6cddf8d4dd711803d0050da3ef29407000000b1f6cddf8d4dd711803d0050 ,
+        0xda3ef29442006f006f006b0069006e00670049006400000000000000bff6cddf ,
+        0x8d4dd711803d0050da3ef29407000000b1f6cddf8d4dd711803d0050da3ef294 ,
+        0x530068006f00770069006e00670049006400000000000000c0f6cddf8d4dd711 ,
+        0x803d0050da3ef29407000000b1f6cddf8d4dd711803d0050da3ef29443007500 ,
+        0x7300740049006400000000000000c1f6cddf8d4dd711803d0050da3ef2940700 ,
+        0x0000b1f6cddf8d4dd711803d0050da3ef2945300650061007400730000000000 ,
+        0x0000e9f6cddf8d4dd711803d0050da3ef2940000000033a8855cd274e240605d ,
+        0x1b0098ae1200460069006c006d00730041007600610069006c00610062006c00 ,
+        0x6500000000000000a4f6cddf8d4dd711803d0050da3ef29407000000e9f6cddf ,
+        0x8d4dd711803d0050da3ef294530068006f00770069006e006700490044000000 ,
+        0x00000000c7f6cddf8d4dd711803d0050da3ef29407000000e9f6cddf8d4dd711 ,
+        0x803d0050da3ef294460069006c006d005400690074006c006500000000000000 ,
+        0xa6f6cddf8d4dd711803d0050da3ef29407000000e9f6cddf8d4dd711803d0050 ,
+        0xda3ef294530068006f00770069006e0067004400610074006500000000000000 ,
+        0xa7f6cddf8d4dd711803d0050da3ef29407000000e9f6cddf8d4dd711803d0050 ,
+        0xda3ef294530068006f00770069006e006700540069006d0065000000
+    End
+    RecordSource ="Booking"
+    Caption ="Booking"
+    DatasheetFontName ="Arial"
+    PrtMip = Begin
+        0xae050000ac050000ac050000ac05000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x4850204465736b4a6574203839354320536572696573205072696e7465720000 ,
+        0x010406409c006c040fff001e01000100ea0a6f08640001000f002c0102000100 ,
+        0x2c01030000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000001000000 ,
+        0x0300000001000000010000000000000000000000000000000000000059381202 ,
+        0x4800500020004400650073006b004a0065007400200038003900350043002000 ,
+        0x53006500720069006500730020005000720069006e0074006500720000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000010002000100000001000000020000000000000000000000000000000000 ,
+        0x00002c012c01cb0009016009420cf609e40c4b000c00f609e40c010000000100 ,
+        0x0100000001000000010000000100000001000000010000000100000000000000 ,
+        0x6400010000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000059381202
+    End
+    PrtDevNames = Begin
+        0x08002700460001004850204465736b4a65742038393543205365726965732050 ,
+        0x72696e746572004850204465736b4a6574203839354320536572696573205072 ,
+        0x696e746572004c5054313a00
+    End
+    OnLoad ="[Event Procedure]"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ListBox
+            SpecialEffect =2
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =-2147483633
+            Name ="FormHeader"
+            GUID = Begin
+                0xd6f6cddf8d4dd711803d0050da3ef294
+            End
+        End
+        Begin Section
+            Height =2154
+            BackColor =-2147483633
+            Name ="Detail"
+            GUID = Begin
+                0xd2f6cddf8d4dd711803d0050da3ef294
+            End
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1677
+                    Top =114
+                    Height =255
+                    ColumnWidth =1701
+                    Name ="BookingId"
+                    ControlSource ="BookingId"
+                    GUID = Begin
+                        0xd8f6cddf8d4dd711803d0050da3ef294
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =114
+                            Width =1560
+                            Height =255
+                            Name ="BookingId_Label"
+                            Caption ="BookingId"
+                            GUID = Begin
+                                0xd9f6cddf8d4dd711803d0050da3ef294
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1677
+                    Top =456
+                    Width =900
+                    Height =255
+                    ColumnWidth =900
+                    TabIndex =1
+                    Name ="ShowingId"
+                    ControlSource ="ShowingId"
+                    GUID = Begin
+                        0xdaf6cddf8d4dd711803d0050da3ef294
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =456
+                            Width =1560
+                            Height =255
+                            Name ="ShowingId_Label"
+                            Caption ="ShowingId"
+                            GUID = Begin
+                                0xdbf6cddf8d4dd711803d0050da3ef294
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1677
+                    Top =798
+                    Width =900
+                    Height =255
+                    ColumnWidth =900
+                    TabIndex =2
+                    Name ="CustId"
+                    ControlSource ="CustId"
+                    GUID = Begin
+                        0xdcf6cddf8d4dd711803d0050da3ef294
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =798
+                            Width =1560
+                            Height =255
+                            Name ="CustId_Label"
+                            Caption ="CustId"
+                            GUID = Begin
+                                0xddf6cddf8d4dd711803d0050da3ef294
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    DecimalPlaces =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1677
+                    Top =1140
+                    Width =600
+                    Height =255
+                    ColumnWidth =600
+                    TabIndex =3
+                    Name ="Seats"
+                    ControlSource ="Seats"
+                    GUID = Begin
+                        0xdef6cddf8d4dd711803d0050da3ef294
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =1140
+                            Width =1560
+                            Height =255
+                            Name ="Seats_Label"
+                            Caption ="Seats"
+                            GUID = Begin
+                                0xdff6cddf8d4dd711803d0050da3ef294
+                            End
+                        End
+                    End
+                End
+                Begin CommandButton
+                    Enabled = NotDefault
+                    OverlapFlags =85
+                    Left =3514
+                    Top =1700
+                    Width =1275
+                    Height =405
+                    TabIndex =4
+                    Name ="cmdMakeBooking"
+                    Caption ="Make Booking"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0x0cf7cddf8d4dd711803d0050da3ef294
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =5215
+                    Top =56
+                    TabIndex =5
+                    Name ="txtBookingCount"
+                    GUID = Begin
+                        0x15f7cddf8d4dd711803d0050da3ef294
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =4081
+                            Top =60
+                            Width =1125
+                            Height =240
+                            Name ="Label12"
+                            Caption ="Booking Count"
+                            GUID = Begin
+                                0x16f7cddf8d4dd711803d0050da3ef294
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5215
+                    Top =453
+                    TabIndex =6
+                    Name ="txtSeatCount"
+                    GUID = Begin
+                        0x19f7cddf8d4dd711803d0050da3ef294
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =4251
+                            Top =453
+                            Width =870
+                            Height =240
+                            Name ="Label14"
+                            Caption ="Seat Count"
+                            GUID = Begin
+                                0x1af7cddf8d4dd711803d0050da3ef294
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5215
+                    Top =963
+                    TabIndex =7
+                    Name ="txtSeatsLeft"
+                    GUID = Begin
+                        0x3af7cddf8d4dd711803d0050da3ef294
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =4305
+                            Top =960
+                            Width =795
+                            Height =240
+                            Name ="Label16"
+                            Caption ="Seats Left"
+                            GUID = Begin
+                                0x3cf7cddf8d4dd711803d0050da3ef294
+                            End
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =1984
+            BackColor =-2147483633
+            Name ="FormFooter"
+            GUID = Begin
+                0xd7f6cddf8d4dd711803d0050da3ef294
+            End
+            Begin
+                Begin ListBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =4
+                    Left =170
+                    Top =113
+                    Width =5760
+                    Name ="lstShowing"
+                    ControlSource ="ShowingId"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT FilmsAvailable.ShowingID, FilmsAvailable.FilmTitle, FilmsAvailable.Showin"
+                        "gDate, FilmsAvailable.ShowingTime FROM FilmsAvailable; "
+                    ColumnWidths ="1440;1440;1440;1440"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0xecf6cddf8d4dd711803d0050da3ef294
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+Option Explicit
+
+Const TotalSeats = 50   'number of seats at each showing
+
+'-------------------------------------------
+Private Sub cmdMakeBooking_Click()
+On Error GoTo Err_cmdMakeBooking_Click
+
+'user has clicked on booking button, so there must be some seats left
+'check that there are enough seats left
+
+    If Seats > txtSeatsLeft Then
+    'if not enough seats, show message and remove info from form
+        MsgBox ("Sorry - we only have " & txtSeatsLeft & " seats available")
+        Me.Undo
+    Else
+    'save the booking details
+        DoCmd.DoMenuItem acFormBar, acRecordsMenu, acSaveRecord, , acMenuVer70
+        MsgBox ("Booking Accepted")
+        'refresh the availability on the form
+        CalculateSeats
+    End If
+
+Exit_cmdMakeBooking_Click:
+    Exit Sub
+
+Err_cmdMakeBooking_Click:
+If Err = 2501 Then
+    'ignore Do Menu Item cancelled message - may happen if save is cancelled
+Else
+    MsgBox Err.Description
+    Resume Exit_cmdMakeBooking_Click
+End If
+    
+End Sub
+
+'---------------------------------------
+Private Sub Form_Load()
+'when form opened, go to new record
+    DoCmd.GoToRecord , , acNewRec
+End Sub
+
+'----------------------------------------------
+Private Sub lstShowing_Click()
+'user has selected a showing, so calculate seats
+    CalculateSeats
+
+'is the showing already fully booked?
+    If txtSeatsLeft = 0 Then
+    'message to say it's full and remove info from form
+        MsgBox ("Sorry - this showing is full")
+        Me.Undo
+    Else
+    'there are seats available, so enable the booking button
+    'should also ask for user id!
+        cmdMakeBooking.Enabled = True
+    End If
+End Sub
+
+'-------------------------------------------------
+Private Sub CalculateSeats()
+'show the current availabity on the form
+    txtBookingCount = DCount("ShowingId", "Booking", "ShowingId = Forms!Booking!ShowingId")
+    If txtBookingCount = 0 Then
+       txtSeatCount = 0
+       txtSeatsLeft = TotalSeats
+    Else
+        txtSeatCount = DSum("Seats", "Booking", "ShowingId = Forms!Booking!ShowingId")
+        txtSeatsLeft = TotalSeats - txtSeatCount
+    End If
+End Sub
