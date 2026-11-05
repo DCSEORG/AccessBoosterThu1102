@@ -18,14 +18,25 @@ Install the Azure CLI, run `az login`, and select a subscription. Then deploy:
 bash scripts/deploy.sh --location eastus --subscription "<subscription-id>"
 ```
 
+The script securely prompts for the SQL administrator password without echoing it.
+Use a password of at least 16 characters containing uppercase and lowercase
+letters, a number, and a symbol. The password is required and is never stored
+in the repository.
+
 The Bicep deployment creates an App Service plan, web app, Azure SQL logical
-server, and database. Pass a strong password when prompted by deploying
-`infra/main.bicep` directly:
+server, and database. If deploying `infra/main.bicep` directly, read the
+password silently and pass it as a deployment parameter:
 
 ```bash
+read -r -s -p "SQL administrator password: " SQL_ADMIN_PASSWORD
+echo
 az deployment sub create --location eastus --template-file infra/main.bicep \
-  --parameters sqlAdminPassword='<strong-password>'
+  --parameters sqlAdminPassword="$SQL_ADMIN_PASSWORD"
+unset SQL_ADMIN_PASSWORD
 ```
+
+Do not put the password in shell history, source files, command transcripts, or
+the deployment instructions.
 
 After deployment, execute `AccessApp/Database/schema.sql` against the database
 with Azure Data Studio or `sqlcmd`. It creates the tables and the

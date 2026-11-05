@@ -14,7 +14,7 @@ param sqlServerName string
 param sqlDatabaseName string
 
 @secure()
-param sqlAdminPassword string = 'ChangeThisPassword-123!'
+param sqlAdminPassword string
 
 resource appServicePlan 'Microsoft.Web/serverfarms@2023-01-01' = {
   name: appServicePlanName

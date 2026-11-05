@@ -48,6 +48,20 @@ fi
 CURRENT_SUB=$(az account show --query "name" -o tsv)
 echo "Using subscription: $CURRENT_SUB"
 
+# ── Collect SQL administrator password without echoing it ─────────────────────
+while true; do
+  read -r -s -p "Enter a strong Azure SQL administrator password (16+ characters, upper/lowercase, number, and symbol): " SQL_ADMIN_PASSWORD
+  echo ""
+  if [[ ${#SQL_ADMIN_PASSWORD} -ge 16 &&
+        "$SQL_ADMIN_PASSWORD" =~ [A-Z] &&
+        "$SQL_ADMIN_PASSWORD" =~ [a-z] &&
+        "$SQL_ADMIN_PASSWORD" =~ [0-9] &&
+        "$SQL_ADMIN_PASSWORD" =~ [^A-Za-z0-9] ]]; then
+    break
+  fi
+  echo "ERROR: Password does not meet the required strength. Please try again."
+done
+
 # ── Generate timestamp ────────────────────────────────────────────────────────
 TIMESTAMP=$(date -u +"%Y%m%d%H%M%S")
 DEPLOYMENT_NAME="access-booster-${TIMESTAMP}"
@@ -63,13 +77,13 @@ BICEP_FILE="${SCRIPT_DIR}/../infra/main.bicep"
 
 DEPLOY_OUTPUT=$(mktemp)
 chmod 600 "${DEPLOY_OUTPUT}"
-trap 'rm -f "${DEPLOY_OUTPUT}"' EXIT
+trap 'rm -f "${DEPLOY_OUTPUT}"; unset SQL_ADMIN_PASSWORD' EXIT
 
 az deployment sub create \
   --name        "${DEPLOYMENT_NAME}" \
   --location    "${LOCATION}" \
   --template-file "${BICEP_FILE}" \
-  --parameters  timestamp="${TIMESTAMP}" location="${LOCATION}" \
+  --parameters  timestamp="${TIMESTAMP}" location="${LOCATION}" sqlAdminPassword="${SQL_ADMIN_PASSWORD}" \
   --output      json \
   > "${DEPLOY_OUTPUT}"
 

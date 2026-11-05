@@ -7,8 +7,8 @@ param timestamp string = utcNow('yyyyMMddHHmmss')
 param location string = 'eastus'
 
 @secure()
-@description('SQL administrator password. Replace the placeholder for production.')
-param sqlAdminPassword string = 'ChangeThisPassword-123!'
+@description('SQL administrator password. Must be supplied securely at deployment time.')
+param sqlAdminPassword string
 
 var resourceGroupName = 'rg-access-booster-${timestamp}'
 var appServicePlanName = 'asp-access-booster-${timestamp}'
