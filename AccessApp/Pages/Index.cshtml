@@ -1,0 +1,36 @@
+@page
+@model AccessApp.Pages.IndexModel
+<section class="hero">
+    <p class="eyebrow">NOW SHOWING</p>
+    <h1>Book your next great story.</h1>
+    <p class="lead">Choose a film, pick a showtime, and reserve your seats in seconds.</p>
+</section>
+<div class="grid">
+@foreach (var showing in Model.Showings)
+{
+    var availability = Model.Availability[showing.ShowingId];
+    <article class="Box">
+        <div class="Box-row">
+            <div>
+                <p class="eyebrow">SCREENING</p>
+                <h2>@showing.FilmTitle</h2>
+                <p class="muted">@showing.ShowingDate.ToString("dddd, MMMM d") · @showing.ShowingTime.ToString("h:mm tt")</p>
+            </div>
+            <span class="Counter">@availability.SeatsLeft seats left</span>
+        </div>
+        @if (availability.SeatsLeft > 0)
+        {
+            <form method="post" class="booking-form">
+                <input type="hidden" name="ShowingId" value="@showing.ShowingId" />
+                <label>Customer <select name="CustomerId" required>
+                    @foreach (var customer in Model.Customers) { <option value="@customer.CustId">@customer.CustName</option> }
+                </select></label>
+                <label>Seats <input name="Seats" type="number" min="1" max="@availability.SeatsLeft" value="1" required /></label>
+                <button class="btn" type="submit">Make booking</button>
+            </form>
+        }
+        else { <p class="flash error">This showing is full.</p> }
+    </article>
+}
+</div>
+@if (!string.IsNullOrWhiteSpace(Model.Message)) { <div class="flash @(Model.Success ? "success" : "error")">@Model.Message</div> }
