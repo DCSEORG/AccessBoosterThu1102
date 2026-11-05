@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Access Cinema</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+<header class="Header">
+    <div class="container header-inner">
+        <a class="brand" asp-page="/Index"><span class="octicon">◉</span> Access Cinema</a>
+        <a class="header-link" href="https://github.com" target="_blank" rel="noreferrer">Built for the web</a>
+    </div>
+</header>
+<main class="container">@RenderBody()</main>
+<footer class="container footer">A modern booking experience · <a asp-page="/Index">Home</a></footer>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
